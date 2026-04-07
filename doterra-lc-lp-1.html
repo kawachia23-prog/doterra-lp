@@ -7,8 +7,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Noto+Serif+JP:wght@300;400&display=swap" rel="stylesheet">
 <style>
 :root {
-  --cream: #FAF7F2;
-  --warm-white: #FDF9F4;
+  --cream: #FDF0F3;
+  --warm-white: #FFF5F7;
   --sage: #8B9E82;
   --deep-sage: #5A6B53;
   --terracotta: #C4845A;
@@ -181,15 +181,26 @@ body {
   border-top:1px solid var(--border); padding-top:12px;
 }
 .kit-contents.open { display:block; }
+.kit-warning {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--terracotta);
+  background: rgba(196,132,90,0.08);
+  border: 1px solid rgba(196,132,90,0.2);
+  border-radius: 8px;
+  padding: 8px 12px;
+  line-height: 1.7;
+  margin-top: 4px;
+}
 .kit-btn {
   display:block; text-align:center; padding:13px 20px; border-radius:100px;
   font-size:13px; letter-spacing:0.06em; text-decoration:none;
   transition:all 0.25s ease; font-family:'Noto Serif JP',serif; margin-top:4px;
 }
-.kit-btn-primary { background:var(--charcoal); color:white; }
-.kit-btn-primary:hover { background:var(--deep-sage); }
-.kit-btn-outline { border:1px solid var(--charcoal); color:var(--charcoal); }
-.kit-btn-outline:hover { background:var(--charcoal); color:white; }
+.kit-btn-primary { background:#E8758A; color:white; }
+.kit-btn-primary:hover { background:#d4637a; }
+.kit-btn-outline { background:#E8758A; color:white; border:none; }
+.kit-btn-outline:hover { background:#d4637a; color:white; }
 
 /* NOTE */
 .note-section { padding:56px 24px; max-width:700px; margin:0 auto; }
@@ -228,7 +239,7 @@ footer {
   <p class="hero-eyebrow">Aroma school nio × doTERRA</p>
   <h1 class="hero-title">はじめての<em>doTERRA</em><br>登録ガイド</h1>
   <p class="hero-sub">今なら登録キットが<strong style="color:var(--terracotta)">最大20%OFF</strong>。<br>5月1日14:59までの期間限定キャンペーン実施中。</p>
-  <div class="hero-badge">🎁 登録キット20%OFF &nbsp;｜&nbsp; 4/1（水）〜 5/1（金）14:59まで</div>
+  <div class="hero-badge">🎁 登録キット20%OFF<br>4/1（水）〜 5/1（金）14:59まで</div>
 
 
 </div>
@@ -254,10 +265,9 @@ footer {
     <div class="step">
       <div class="step-num">03</div>
       <div class="step-title">登録内容を確認する</div>
-      <div class="step-desc">登録画面で以下の2点を必ずご確認ください。<br><br>
+      <div class="step-desc"><span style="font-size:15px;font-weight:700;color:#C0392B;">登録画面で以下の2点を必ずご確認ください。</span><br><br>
       ① 紹介者・スポンサーIDが「<strong>14767755</strong>」、名前が「<strong>Kawachi, Ayako</strong>」になっているか<br><br>
-      ② 選んだキットのPVを確認し、該当のプレゼントが画面に表示されているか<br>
-      <span style="font-size:11px;color:var(--terracotta);">・100PV以上 → ペパーミントタッチ（10mL）<br>・400PV以上 → ペパーミントタッチ＋PHOSSILミネラル（350mL）</span></div>
+      ② <span style="color:#C0392B;font-weight:700;">「合計を見る」を押した後、「今すぐ注文」を押す前に「Launch Club専用プレゼントオイル」が表示されているか確認してください。表示がない場合はLINEへご連絡ください。</span></div>
     </div>
     <div class="step">
       <div class="step-num">04</div>
@@ -290,8 +300,9 @@ footer {
       <div style="font-size:12px;color:var(--muted);line-height:1.9;">
         <strong style="color:var(--charcoal);font-weight:400;">🌿 アロマ123オンラインサロンとは</strong><br>
         アロマテラピー・健康・マインド・ビジネスなど多岐にわたるテーマで学べるオンラインサロンです。こちらのサイト経由でdoTERRAに登録されたメンバーは、登録後LINEでご連絡いただくと無料でご招待します。サロン内では毎月の勉強会・Q&amp;A・メンバー同士の交流など、学びと繋がりの場を提供しています。<br><br>
-        <strong style="color:var(--terracotta);font-weight:400;">⚠️ 特典を受け取るために必ずご確認をお願いします</strong><br>
-        登録画面でスポンサーID「<strong style="color:var(--charcoal);">14767755</strong>」、名前「<strong style="color:var(--charcoal);">Kawachi, Ayako</strong>」が表示されていることをご確認ください。この表示がない場合、期間限定プレゼントおよびオンラインサロンへのご招待をお届けできません。
+        <strong style="color:#C0392B;font-weight:700;">⚠️ 特典を受け取るために必ずご確認をお願いします</strong><br><br>
+        <span style="color:#C0392B;font-weight:700;">◉ 登録画面でスポンサーID「14767755」、名前「Kawachi, Ayako」が表示されていることをご確認ください。この表示がない場合、期間限定プレゼントおよびオンラインサロンへのご招待をお届けできません。</span><br><br>
+        <span style="color:#C0392B;font-weight:700;">◉「合計を見る」を押した後、「今すぐ注文」を押す前に「Launch Club専用プレゼントオイル」が表示されているか確認してください。表示がない場合はLINEへご連絡ください。</span>
       </div>
     </div>
   </div>
@@ -327,6 +338,7 @@ footer {
         <div class="kit-desc">定番オイル10本＋ディフューザー＋ミネラルドリンクのセット。届いたその日から始められる、はじめての方に一番人気のキット。</div>
         <button class="kit-toggle" onclick="toggleContents(this)">内容を見る</button>
         <div class="kit-contents">シングルオイル5種（ラベンダー・レモン・ペパーミント・ティーツリー・フランキンセンス 各5mL）／ブレンドオイル5種（オンガード・ゼンジェスト・イージーエア・ディープブルー・ドテラバランス 各5mL）／PHOSSILミネラルオリジナル（550ml）／ホホバオイル（100ml）／ラルツディフューザー／WC登録料込み</div>
+        <div class="kit-warning" style="color:#C0392B;font-weight:700;">⚠️「合計を見る」を押した後、「今すぐ注文」を押す前に「Launch Club専用プレゼントオイル」が表示されているか確認してください。表示がない場合はLINEへご連絡ください。</div>
         <a href="https://doterra.me/whlSPX" class="kit-btn kit-btn-primary" target="_blank" rel="noopener">このキットで登録する →</a>
       </div>
 
@@ -341,6 +353,7 @@ footer {
         <div class="kit-desc">健康の土台を整えたい方に。ドテラの人気ベースサプリ「LLVパック」とミネラルドリンクのセット。シングルオイル3本つき。</div>
         <button class="kit-toggle" onclick="toggleContents(this)">内容を見る</button>
         <div class="kit-contents">シングルオイル3種（レモン・オレンジ・スペアミント 各15mL）／LLVパック（アルファCRS+・xEOメガ・マイクロプレックスVMz）／PHOSSILミネラル2種（オリジナル・カシス 各550ml）／ミネラル用スプレーボトル／WC登録料込み</div>
+        <div class="kit-warning" style="color:#C0392B;font-weight:700;">⚠️「合計を見る」を押した後、「今すぐ注文」を押す前に「Launch Club専用プレゼントオイル」が表示されているか確認してください。表示がない場合はLINEへご連絡ください。</div>
         <a href="https://doterra.me/RGa0S-" class="kit-btn kit-btn-outline" target="_blank" rel="noopener">このキットで登録する →</a>
       </div>
 
@@ -355,6 +368,7 @@ footer {
         <div class="kit-desc">毛穴・皮脂・ニキビが気になる方向けのスキンケアライン。クレンジングからアイクリームまで揃ったフルセット。ゼラニウム15mL・ホホバオイルつき。</div>
         <button class="kit-toggle" onclick="toggleContents(this)">内容を見る</button>
         <div class="kit-contents">ゼラニウム（15mL）／ホホバオイル（100mL）／IKISEクレンジングバーム・フェイスウォッシュ・ブースターオイル・ローション＜クリア＆ライト＞・デュアルセラム・デイ＆ナイトフェイスクリーム・インテンシブアイクリーム／PHOSSILミネラルオリジナル（550ml）／WC登録料込み</div>
+        <div class="kit-warning" style="color:#C0392B;font-weight:700;">⚠️「合計を見る」を押した後、「今すぐ注文」を押す前に「Launch Club専用プレゼントオイル」が表示されているか確認してください。表示がない場合はLINEへご連絡ください。</div>
         <a href="https://doterra.me/f-_TK0" class="kit-btn kit-btn-outline" target="_blank" rel="noopener">このキットで登録する →</a>
       </div>
 
@@ -369,6 +383,7 @@ footer {
         <div class="kit-desc">乾燥・ハリ・くすみが気になる方向けのスキンケアライン。しっとりリッチなテクスチャーで潤いをキープ。ゼラニウム15mL・ホホバオイルつき。</div>
         <button class="kit-toggle" onclick="toggleContents(this)">内容を見る</button>
         <div class="kit-contents">ゼラニウム（15mL）／ホホバオイル（100mL）／IKISEクレンジングバーム・フェイスウォッシュ・ブースターオイル・ローション＜スムーズ＆リッチ＞・デュアルセラム・デイ＆ナイトフェイスクリーム・インテンシブアイクリーム／PHOSSILミネラルオリジナル（550ml）／WC登録料込み</div>
+        <div class="kit-warning" style="color:#C0392B;font-weight:700;">⚠️「合計を見る」を押した後、「今すぐ注文」を押す前に「Launch Club専用プレゼントオイル」が表示されているか確認してください。表示がない場合はLINEへご連絡ください。</div>
         <a href="https://doterra.me/QwQ44O" class="kit-btn kit-btn-outline" target="_blank" rel="noopener">このキットで登録する →</a>
       </div>
 
@@ -383,6 +398,7 @@ footer {
         <div class="kit-desc">定番オイル＋大人気「森の音」ブレンドがセットに。ディフューザー・ウッドボックスつきで届いてすぐ飾れる。香りのある暮らしを始めたい方に。</div>
         <button class="kit-toggle" onclick="toggleContents(this)">内容を見る</button>
         <div class="kit-contents">シングルオイル8種（ラベンダー・レモン・ペパーミント・ティーツリー・オレンジ・スペアミント・フランキンセンス・オレガノ 各15mL）／ブレンドオイル10種（オンガード・ゼンジェスト・ドテラバランス・イージーエア・アロマタッチ・ドテラセレニティー・森の音 各15mL、マグノリアタッチ・森の音タッチ ロールオン各10mL、ディープブルー 5mL）／ドテラ ラルツディフューザー・ウッドボックス・ドテラ ココナッツオイル（115mL）／WC登録料込み</div>
+        <div class="kit-warning" style="color:#C0392B;font-weight:700;">⚠️「合計を見る」を押した後、「今すぐ注文」を押す前に「Launch Club専用プレゼントオイル」が表示されているか確認してください。表示がない場合はLINEへご連絡ください。</div>
         <a href="https://doterra.me/xin3a-" class="kit-btn kit-btn-outline" target="_blank" rel="noopener">このキットで登録する →</a>
       </div>
 
@@ -398,6 +414,7 @@ footer {
         <div class="kit-desc">アロマタッチキット＋人気オイル＋サプリ＋ホームケア用品まで揃ったオールインワンセット。ファスト・トラック・プログラム対象。アロマタッチ オンライン認定コース無料特典つき。</div>
         <button class="kit-toggle" onclick="toggleContents(this)">内容を見る</button>
         <div class="kit-contents">アロマタッチキット8種（各5mL）＋ドテラ ココナッツオイル／シングルオイル3種（フランキンセンス・コパイバ・ターメリック 各15mL）／ブレンドオイル5種（森の音・アダプティブ・ドテラセレニティー・イージーエア・メタPWR 各15mL）／PHOSSILミネラル2種（各550mL）／植物酵素+・PBアシスト+・メタPWRアドバンテージ他サプリ類／ディープブルーラブ・トゥースペイスト・オンガードハンドウォッシュ2本／ラルツディフューザー・ウッドボックス／WC登録料込み</div>
+        <div class="kit-warning" style="color:#C0392B;font-weight:700;">⚠️「合計を見る」を押した後、「今すぐ注文」を押す前に「Launch Club専用プレゼントオイル」が表示されているか確認してください。表示がない場合はLINEへご連絡ください。</div>
         <a href="https://doterra.me/tGqNZ-" class="kit-btn kit-btn-primary" target="_blank" rel="noopener">このキットで登録する →</a>
       </div>
 
@@ -413,6 +430,7 @@ footer {
         <div class="kit-desc">オイル・スキンケア・サプリ・ホームケアがすべて揃うトータルケアキット。アロマタッチ認定コース無料特典つき。クリア＆ライトタイプ。</div>
         <button class="kit-toggle" onclick="toggleContents(this)">内容を見る</button>
         <div class="kit-contents">シングルオイル7種（各15mL）／ブレンドオイル9種／ホホバオイル（100mL）／PHOSSILミネラル2種（各550ml）／LLVパック／IKISE全7品（クリア＆ライト）／トゥースペイスト・ディープブルーラブ・森の音洗濯洗剤・ルーム＆リネンスプレー・オンガードハンドウォッシュ2本／ラルツディフューザー・ウッドボックス／WC登録料込み</div>
+        <div class="kit-warning" style="color:#C0392B;font-weight:700;">⚠️「合計を見る」を押した後、「今すぐ注文」を押す前に「Launch Club専用プレゼントオイル」が表示されているか確認してください。表示がない場合はLINEへご連絡ください。</div>
         <a href="https://doterra.me/ZT2k3y" class="kit-btn kit-btn-outline" target="_blank" rel="noopener">このキットで登録する →</a>
       </div>
 
@@ -428,6 +446,7 @@ footer {
         <div class="kit-desc">オイル・スキンケア・サプリ・ホームケアがすべて揃うトータルケアキット。アロマタッチ認定コース無料特典つき。スムーズ＆リッチタイプ。</div>
         <button class="kit-toggle" onclick="toggleContents(this)">内容を見る</button>
         <div class="kit-contents">シングルオイル7種（各15mL）／ブレンドオイル9種／ホホバオイル（100mL）／PHOSSILミネラル2種（各550ml）／LLVパック／IKISE全7品（スムーズ＆リッチ）／トゥースペイスト・ディープブルーラブ・森の音洗濯洗剤・ルーム＆リネンスプレー・オンガードハンドウォッシュ2本／ラルツディフューザー・ウッドボックス／WC登録料込み</div>
+        <div class="kit-warning" style="color:#C0392B;font-weight:700;">⚠️「合計を見る」を押した後、「今すぐ注文」を押す前に「Launch Club専用プレゼントオイル」が表示されているか確認してください。表示がない場合はLINEへご連絡ください。</div>
         <a href="https://doterra.me/ChBkfp" class="kit-btn kit-btn-outline" target="_blank" rel="noopener">このキットで登録する →</a>
       </div>
 
@@ -443,6 +462,7 @@ footer {
         <div class="kit-desc">シングルオイル28種＋ブレンドオイル22種の圧巻コレクション。アロマ講師・本格的にオイルを学びたい方・ビジネスをスタートしたい方に。アロマタッチ認定コース無料特典つき。</div>
         <button class="kit-toggle" onclick="toggleContents(this)">内容を見る</button>
         <div class="kit-contents">シングルオイル28種（ラベンダー・レモン・ペパーミント・ティーツリー他 各15mL、ジュニパーベリー・ダグラスファー・ヒノキ・メリッサ 各5mL）／ブレンドオイル22種（各15mL・5mL・ロールオン10mL）／ラルツディフューザー・ウッドボックス・ミニボトル2mL（24本入）・ドテラ ココナッツオイル（115mL）／WC登録料込み</div>
+        <div class="kit-warning" style="color:#C0392B;font-weight:700;">⚠️「合計を見る」を押した後、「今すぐ注文」を押す前に「Launch Club専用プレゼントオイル」が表示されているか確認してください。表示がない場合はLINEへご連絡ください。</div>
         <a href="https://doterra.me/4azPnt" class="kit-btn kit-btn-outline" target="_blank" rel="noopener">このキットで登録する →</a>
       </div>
 
@@ -457,6 +477,8 @@ footer {
     上のボタンを押すとdoTERRA公式サイトの登録ページが開きます。<br>
     私のIDと名前が自動入力されているので、各ID等の入力は不要です。<br>
     （もし、自動で入力されていない場合は先に進まずにご連絡ください。）<br><br>
+    <strong style="color:var(--terracotta);">⚠️「合計を見る」を押した後、「今すぐ注文」を押す前に「Launch Club専用プレゼントオイル」が表示されているかご確認ください。<br>
+    表示されていない場合は、そのまま進まずLINEでご連絡ください。まれに表示されないケースがあります。</strong><br><br>
     大変お手数ですが、登録完了後、LINEで「登録しました」とご連絡ください。<br><br>
     「どれにしたらいいかわからない」など、ご質問などございましたらお気軽にLINEまでご連絡ください。
   </div>
